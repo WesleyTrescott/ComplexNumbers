@@ -4,7 +4,7 @@
  *  Created on: Apr 18, 2016
  *      Author: wesley Trescott
  */
-#include "/home/wesley/workspace/Complex Numbers/src/ComplexNumber.h"
+#include "src/ComplexNumber.h"
 #include <iostream>
 using namespace std;
 
