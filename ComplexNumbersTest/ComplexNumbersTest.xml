@@ -1,0 +1,10 @@
+<testsuites>
+	<testsuite name="AllTests" tests="2">
+		<testcase classname="AllTests" name="testPlusOperator"/>
+		<testcase classname="AllTests" name="testMinusOperator">
+			<failure message="../src/Test.cpp:18 testMinusOperator: minus operator works">
+testMinusOperator: minus operator works
+			</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

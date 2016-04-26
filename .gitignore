@@ -1,0 +1,13 @@
+RemoteSystemsTempFiles
+.metadata
+.project
+.mylyn
+.plugins
+version.ini
+.lock
+.log
+contexts
+repositories.xml.zip
+.settings
+.cproject
+.project

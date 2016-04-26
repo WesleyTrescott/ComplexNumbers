@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Complex Numbers Test" default="Execute make">
+	<target name="Execute make">
+		<exec executable="make"></exec>
+	</target>
+</project>
