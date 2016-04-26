@@ -1,9 +1,25 @@
 <testsuites>
-	<testsuite name="AllTests" tests="2">
+	<testsuite name="AllTests" tests="6">
 		<testcase classname="AllTests" name="testPlusOperator"/>
-		<testcase classname="AllTests" name="testMinusOperator">
-			<failure message="../src/Test.cpp:18 testMinusOperator: minus operator works">
-testMinusOperator: minus operator works
+		<testcase classname="AllTests" name="testMinusOperator"/>
+		<testcase classname="AllTests" name="testMultiplicationOperator">
+			<failure message="../Test.cpp:29 testMultiplicationOperator: Problem with multiplication operator!">
+testMultiplicationOperator: Problem with multiplication operator!
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="testDivisionOperator">
+			<failure message="../Test.cpp:34 testDivisionOperator: Problem with division operator!">
+testDivisionOperator: Problem with division operator!
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="testConjugate">
+			<failure message="../Test.cpp:39 testConjugate: Problem with getConjugate method!">
+testConjugate: Problem with getConjugate method!
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="testReciprocal">
+			<failure message="../Test.cpp:44 testReciprocal: Problem with getReciprocal method!">
+testReciprocal: Problem with getReciprocal method!
 			</failure>
 		</testcase>
 	</testsuite>

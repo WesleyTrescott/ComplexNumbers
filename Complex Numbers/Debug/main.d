@@ -1,4 +1,3 @@
-main.o: ../main.cpp \
- /home/wesley/workspace/Complex\ Numbers/src/ComplexNumber.h
+main.o: ../main.cpp ../src/ComplexNumber.h
 
-/home/wesley/workspace/Complex\ Numbers/src/ComplexNumber.h:
+../src/ComplexNumber.h:
