@@ -50,7 +50,7 @@ ComplexNumber ComplexNumber::operator*(ComplexNumber c)
 {
 	ComplexNumber tmp;
 	tmp.real = (real * c.real) - (imag * c.imag);
-	tmp.imag = (real * c.imag) - (imag * c.real);
+	tmp.imag = (real * c.imag) + (imag * c.real);
 	return tmp;
 }
 

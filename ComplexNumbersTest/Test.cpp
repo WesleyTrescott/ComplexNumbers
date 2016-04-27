@@ -25,23 +25,53 @@ void testMinusOperator() {
 }
 
 void testMultiplicationOperator() {
-
-	ASSERTM("Problem with multiplication operator!", false);
+	ComplexNumber a(5, -1);
+	ComplexNumber b(2, 1);
+	ComplexNumber trueResult(11, 3);
+	ComplexNumber testResult(0, 0);
+	testResult = a * b;
+	bool equal = (trueResult.real == testResult.real && trueResult.imag == testResult.imag) ? true : false;
+	ASSERTM("Problem with multiplication operator!", equal);
 }
 
 void testDivisionOperator() {
-
-	ASSERTM("Problem with division operator!", false);
+	ComplexNumber a(5, -1);
+	ComplexNumber b(2, 1);
+	float real = 9.0 / 5;
+	float imag = -7.0 / 5;
+	ComplexNumber trueResult(real, imag);
+	ComplexNumber testResult(0, 0);
+	testResult = a / b;
+	bool equal = (trueResult.real == testResult.real && trueResult.imag == testResult.imag) ? true : false;
+	ASSERTM("Problem with division operator!", equal);
 }
 
 void testConjugate() {
-
-	ASSERTM("Problem with getConjugate method!", false);
+	ComplexNumber a(5, -1);
+	ComplexNumber trueResult(5, 1);
+	ComplexNumber testResult(0, 0);
+	testResult = a.getConjugate();
+	bool equal = (trueResult.real == testResult.real && trueResult.imag == testResult.imag) ? true : false;
+	ASSERTM("Problem with getConjugate method!", equal);
 }
 
 void testReciprocal() {
+	ComplexNumber a(5, -1);
+	float real = 5.0 / 26;
+	float imag = 1.0 / 26;
+	ComplexNumber trueResult(real, imag);
+	ComplexNumber testResult(0, 0);
+	testResult = a.getReciprocal();
+	bool equal = (trueResult.real == testResult.real && trueResult.imag == testResult.imag) ? true : false;
+	ASSERTM("Problem with getReciprocal method!", equal);
+}
 
-	ASSERTM("Problem with getReciprocal method!", false);
+void testModulus() {
+	ComplexNumber a(5, -1);
+	float trueResult = sqrt(26);
+	float testResult = a.getModulus();
+	bool equal = (trueResult == testResult) ? true : false;
+	ASSERTM("Problem with getModulus method!", equal);
 }
 
 void runAllTests(int argc, char const *argv[]){
@@ -52,6 +82,7 @@ void runAllTests(int argc, char const *argv[]){
 	s.push_back(CUTE(testDivisionOperator));
 	s.push_back(CUTE(testConjugate));
 	s.push_back(CUTE(testReciprocal));
+	s.push_back(CUTE(testModulus));
 	cute::xml_file_opener xmlfile(argc,argv);
 	cute::xml_listener<cute::ide_listener<> >  lis(xmlfile.out);
 	cute::makeRunner(lis,argc,argv)(s, "AllTests");
