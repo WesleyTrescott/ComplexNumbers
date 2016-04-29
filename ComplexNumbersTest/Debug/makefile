@@ -44,7 +44,7 @@ all: ComplexNumbersTest
 ComplexNumbersTest: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++  -o "ComplexNumbersTest" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -ftest-coverage -fprofile-arcs -o "ComplexNumbersTest" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

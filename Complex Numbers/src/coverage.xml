@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage
+  SYSTEM 'http://cobertura.sourceforge.net/xml/coverage-03.dtd'>
+<coverage branch-rate="0.25" line-rate="0.706666666667" timestamp="1461940627"
+ version="gcovr 3.2">
+ <sources>
+  <source>.</source>
+ </sources>
+ <packages>
+  <package branch-rate="0.25" complexity="0.0" line-rate="0.706666666667"
+   name="">
+   <classes>
+    <class branch-rate="0.25" complexity="0.0" filename="ComplexNumber.cpp"
+     line-rate="0.706666666667" name="ComplexNumber_cpp">
+     <methods/>
+     <lines>
+      <line branch="false" hits="0" number="128"/>
+      <line branch="false" hits="0" number="129"/>
+      <line branch="false" hits="0" number="130"/>
+      <line branch="false" hits="0" number="131"/>
+      <line branch="false" hits="0" number="132"/>
+      <line branch="true" condition-coverage="50% (2/4)" hits="9"
+       number="133">
+       <conditions>
+        <condition coverage="50%" number="0" type="jump"/>
+       </conditions>
+      </line>
+      <line branch="false" hits="87" number="11"/>
+      <line branch="false" hits="87" number="13"/>
+      <line branch="false" hits="87" number="14"/>
+      <line branch="false" hits="87" number="15"/>
+      <line branch="false" hits="12" number="18"/>
+      <line branch="false" hits="12" number="20"/>
+      <line branch="false" hits="12" number="21"/>
+      <line branch="false" hits="12" number="23"/>
+      <line branch="false" hits="18" number="26"/>
+      <line branch="false" hits="18" number="28"/>
+      <line branch="false" hits="18" number="29"/>
+      <line branch="false" hits="18" number="30"/>
+      <line branch="false" hits="3" number="33"/>
+      <line branch="false" hits="3" number="35"/>
+      <line branch="false" hits="3" number="36"/>
+      <line branch="false" hits="3" number="37"/>
+      <line branch="false" hits="3" number="38"/>
+      <line branch="false" hits="3" number="41"/>
+      <line branch="false" hits="3" number="43"/>
+      <line branch="false" hits="3" number="44"/>
+      <line branch="false" hits="3" number="45"/>
+      <line branch="false" hits="3" number="46"/>
+      <line branch="false" hits="3" number="49"/>
+      <line branch="false" hits="3" number="51"/>
+      <line branch="false" hits="3" number="52"/>
+      <line branch="false" hits="3" number="53"/>
+      <line branch="false" hits="3" number="54"/>
+      <line branch="false" hits="3" number="57"/>
+      <line branch="false" hits="3" number="59"/>
+      <line branch="false" hits="3" number="60"/>
+      <line branch="false" hits="3" number="61"/>
+      <line branch="false" hits="3" number="62"/>
+      <line branch="false" hits="3" number="63"/>
+      <line branch="false" hits="3" number="64"/>
+      <line branch="false" hits="3" number="65"/>
+      <line branch="false" hits="3" number="68"/>
+      <line branch="false" hits="3" number="70"/>
+      <line branch="false" hits="3" number="71"/>
+      <line branch="false" hits="3" number="72"/>
+      <line branch="false" hits="3" number="73"/>
+      <line branch="false" hits="3" number="76"/>
+      <line branch="false" hits="3" number="78"/>
+      <line branch="false" hits="3" number="79"/>
+      <line branch="false" hits="3" number="80"/>
+      <line branch="false" hits="3" number="82"/>
+      <line branch="false" hits="3" number="83"/>
+      <line branch="false" hits="3" number="84"/>
+      <line branch="false" hits="3" number="85"/>
+      <line branch="false" hits="3" number="88"/>
+      <line branch="false" hits="3" number="91"/>
+      <line branch="false" hits="3" number="92"/>
+      <line branch="false" hits="3" number="93"/>
+      <line branch="false" hits="0" number="96"/>
+      <line branch="false" hits="0" number="98"/>
+      <line branch="false" hits="0" number="99"/>
+      <line branch="false" hits="0" number="100"/>
+      <line branch="false" hits="0" number="102"/>
+      <line branch="false" hits="0" number="104"/>
+      <line branch="false" hits="0" number="105"/>
+      <line branch="false" hits="0" number="106"/>
+      <line branch="false" hits="0" number="107"/>
+      <line branch="false" hits="0" number="109"/>
+      <line branch="false" hits="0" number="111"/>
+      <line branch="false" hits="0" number="113"/>
+      <line branch="false" hits="0" number="116"/>
+      <line branch="false" hits="0" number="118"/>
+      <line branch="false" hits="0" number="121"/>
+      <line branch="true" condition-coverage="0% (0/4)" hits="0" number="123">
+       <conditions>
+        <condition coverage="0%" number="0" type="jump"/>
+       </conditions>
+      </line>
+      <line branch="false" hits="0" number="126"/>
+     </lines>
+    </class>
+   </classes>
+  </package>
+ </packages>
+</coverage>
+
