@@ -11,3 +11,6 @@ repositories.xml.zip
 .settings
 .cproject
 .project
+.gcov
+.gcno
+.gcda
