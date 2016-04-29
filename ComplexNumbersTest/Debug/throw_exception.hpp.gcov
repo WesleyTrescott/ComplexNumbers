@@ -1,0 +1,94 @@
+        -:    0:Source:/home/wesley/workspace/ComplexNumbersProject/ComplexNumbersTest/boost/boost/throw_exception.hpp
+        -:    0:Graph:Test.gcno
+        -:    0:Data:Test.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#ifndef BOOST_THROW_EXCEPTION_HPP_INCLUDED
+        -:    2:#define BOOST_THROW_EXCEPTION_HPP_INCLUDED
+        -:    3:
+        -:    4:// MS compatible compilers support #pragma once
+        -:    5:
+        -:    6:#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+        -:    7:# pragma once
+        -:    8:#endif
+        -:    9:
+        -:   10://
+        -:   11://  boost/throw_exception.hpp
+        -:   12://
+        -:   13://  Copyright (c) 2002 Peter Dimov and Multi Media Ltd.
+        -:   14://  Copyright (c) 2008-2009 Emil Dotchevski and Reverge Studios, Inc.
+        -:   15://
+        -:   16://  Distributed under the Boost Software License, Version 1.0. (See
+        -:   17://  accompanying file LICENSE_1_0.txt or copy at
+        -:   18://  http://www.boost.org/LICENSE_1_0.txt)
+        -:   19://
+        -:   20://  http://www.boost.org/libs/utility/throw_exception.html
+        -:   21://
+        -:   22:
+        -:   23:#include <boost/exception/detail/attribute_noreturn.hpp>
+        -:   24:#include <boost/detail/workaround.hpp>
+        -:   25:#include <boost/config.hpp>
+        -:   26:#include <exception>
+        -:   27:
+        -:   28:#if !defined( BOOST_EXCEPTION_DISABLE ) && defined( __BORLANDC__ ) && BOOST_WORKAROUND( __BORLANDC__, BOOST_TESTED_AT(0x593) )
+        -:   29:# define BOOST_EXCEPTION_DISABLE
+        -:   30:#endif
+        -:   31:
+        -:   32:#if !defined( BOOST_EXCEPTION_DISABLE ) && defined( BOOST_MSVC ) && BOOST_WORKAROUND( BOOST_MSVC, < 1310 )
+        -:   33:# define BOOST_EXCEPTION_DISABLE
+        -:   34:#endif
+        -:   35:
+        -:   36:#if !defined( BOOST_EXCEPTION_DISABLE )
+        -:   37:# include <boost/exception/exception.hpp>
+        -:   38:# include <boost/current_function.hpp>
+        -:   39:# define BOOST_THROW_EXCEPTION(x) ::boost::throw_exception(::boost::enable_error_info(x) <<\
+        -:   40:    ::boost::throw_function(BOOST_CURRENT_FUNCTION) <<\
+        -:   41:    ::boost::throw_file(__FILE__) <<\
+        -:   42:    ::boost::throw_line(__LINE__))
+        -:   43:#else
+        -:   44:# define BOOST_THROW_EXCEPTION(x) ::boost::throw_exception(x)
+        -:   45:#endif
+        -:   46:
+        -:   47:namespace boost
+        -:   48:{
+        -:   49:
+        -:   50:#ifdef BOOST_NO_EXCEPTIONS
+        -:   51:
+        -:   52:void throw_exception( std::exception const & e ); // user defined
+        -:   53:
+        -:   54:#else
+        -:   55:
+function _ZN5boost36throw_exception_assert_compatibilityERKSt9exception called 0 returned 0% blocks executed 0%
+    #####:   56:inline void throw_exception_assert_compatibility( std::exception const & ) { }
+        -:   57:
+function _ZN5boost15throw_exceptionINS_17bad_function_callEEEvRKT_ called 0 returned 0% blocks executed 0%
+    #####:   58:template<class E> BOOST_ATTRIBUTE_NORETURN inline void throw_exception( E const & e )
+        -:   59:{
+        -:   60:    //All boost exceptions are required to derive from std::exception,
+        -:   61:    //to ensure compatibility with BOOST_NO_EXCEPTIONS.
+    #####:   62:    throw_exception_assert_compatibility(e);
+call    0 never executed
+        -:   63:
+        -:   64:#ifndef BOOST_EXCEPTION_DISABLE
+    #####:   65:    throw enable_current_exception(enable_error_info(e));
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+        -:   66:#else
+        -:   67:    throw e;
+        -:   68:#endif
+        -:   69:}
+        -:   70:
+        -:   71:#endif
+        -:   72:
+        -:   73:} // namespace boost
+        -:   74:
+        -:   75:#endif // #ifndef BOOST_THROW_EXCEPTION_HPP_INCLUDED

@@ -1,0 +1,11 @@
+<testsuites>
+	<testsuite name="AllTests" tests="7">
+		<testcase classname="AllTests" name="testPlusOperator"/>
+		<testcase classname="AllTests" name="testMinusOperator"/>
+		<testcase classname="AllTests" name="testMultiplicationOperator"/>
+		<testcase classname="AllTests" name="testDivisionOperator"/>
+		<testcase classname="AllTests" name="testConjugate"/>
+		<testcase classname="AllTests" name="testReciprocal"/>
+		<testcase classname="AllTests" name="testModulus"/>
+	</testsuite>
+</testsuites>
